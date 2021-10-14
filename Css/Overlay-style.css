@@ -1,0 +1,110 @@
+.image-slider{
+    width: 1000px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 23.5%;
+    margin-top: 2%;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+
+    display: none;
+}
+
+.overlay{
+    width: 20%;
+    transition: 2s;
+}
+
+.overlay img{
+    width: 1000px;
+    height: 500px;
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 1000px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.manualButton{
+    border: 0.5px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manualButton:hover{
+    background: black;
+}
+
+.manualButton:not(:last-child){
+    margin-right: 40px;
+}
+
+#xyz1:checked ~ .first{
+    margin-left: 0;
+}
+
+#xyz2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#xyz3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#xyz4:checked ~ .first{
+    margin-left: -60%;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 1000px;
+    margin-top: 520px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div{
+    border: 0.5px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+/* tanda biar kalo dipencet ada warananya */
+#xyz1:checked ~ .navigation-auto .autoButton1{
+    background: black;
+}
+
+#xyz2:checked ~ .navigation-auto .autoButton2{
+    background: black;
+}
+
+#xyz3:checked ~ .navigation-auto .autoButton3{
+    background: black;
+}
+
+#xyz4:checked ~ .navigation-auto .autoButton4{
+    background: black;
+}
+
+@media screen and (max-width: 800px) {
+
+}
